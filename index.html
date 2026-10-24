@@ -1172,7 +1172,7 @@ co.addEventListener('click',e=>{const b=e.target.closest('[data-co]');if(!b)retu
  else if(a==='fill')fillTest();
  else if(a==='copy')copyText($('#pixc').textContent,'Código Pix copiado.');
  else if(a==='restart'){CO.done=false;CO.step=0;CO.err={};CO.order=null;CO.d.aceite=false;$('#stamp').classList.remove('hit');renderStep();Snd.play('page')}
- else if(a==='exit')toggleExit(true);
+ else if(a==='exit'){glide((rooms[roomIdx('r6')].offsetLeft+1400)*k);setTimeout(()=>toggleExit(true),reduce?0:900)}
 });
 $('#fillBtn').addEventListener('click',fillTest);
 $('#cardNo').textContent=String(Math.floor(1000+Math.random()*8999));
