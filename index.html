@@ -1180,7 +1180,7 @@ function updateSummary(){}
 
 /* ---------- porta de saída ---------- */
 const exitDoor=$('#exitDoor'),exitCard=$('#exitCard');
-function inviteText(){const r=S.result,b=r&&BOOKS.find(x=>x.id===r.book);return `Descobri o meu perfil de leitor na Imerso: ${r?r.profile:'leitor(a) curioso(a)'}${b?', com o livro "'+b.t+'"':''}. Vem montar a sua caixa também!`}
+function inviteText(){const r=S.result,b=r&&BOOKS.find(x=>x.id===r.book);return `Descobri o meu perfil de leitor na Imerso: ${r?r.profile:'leitor(a) curioso(a)'}${b?', com o livro "'+b.t+'"':''}. Vem montar a sua caixa também! https://minha-pagina-alpha-eight.vercel.app/`}
 function exitHTML(){
  if(CO.done)return inviteHTML();
  if(!S.result)return `<h4>Ainda dá tempo</h4><p>Você ainda não descobriu o seu livro. O quiz da Sala de Leitura leva menos de um minuto.</p><button type="button" class="btn sm" data-ex="quiz">Ir para a Sala de Leitura</button>`;
